@@ -4,6 +4,7 @@ xrandr --output eDP-1 --primary --mode 1366x768 --pos 0x1080 --output HDMI-1 --m
 
 #Background 
 feh -z --bg-scale ~/Imágenes/*
+py scripts/cron.py &
 
 #Trasparency 
 picom & disown # --experimental-backends --vsync should prevent screen tearing on most setups if needed
