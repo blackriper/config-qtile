@@ -81,13 +81,13 @@ primary_widgets = [
                     lambda: qtile.cmd_spawn(terminal + ' -e yay -Syu')
                 }),
         separator(pd=7),
-        nerd_icon(fg='focus2',text="  "),
+        nerd_icon(fg='focus2',text=" 󰏈 "),
         widget.ThermalSensor(
                       **base_color(fg='light'),
                       mouse_callbacks = {
                           'Button1': lambda : open_gtop()
                       }),
-        nerd_icon(fg='color3',text="  "),
+        nerd_icon(fg='color3',text=" 󰍛 "),
         widget.Memory(
                 format = "{MemUsed:.0f}{mm}",
                 **base_color(fg='light'),
@@ -107,7 +107,7 @@ primary_widgets = [
                     'Button1':
                      lambda: qtile.cmd_spawn(os.path.expanduser('~/.config/rofi/scripts/rofi-bluetooth'))
                }),
-        nerd_icon(fg='color3',text=' 墳 '),
+        nerd_icon(fg='color3',text='  '),
         widget.Volume(
                **base_color(fg='light'),
                mouse_callbacks={
@@ -116,7 +116,7 @@ primary_widgets = [
                }),
         widget.Spacer(length=5),
         separator(),
-        nerd_icon(fg='color4',text='  '),
+        nerd_icon(fg='color4',text=' 󰃰 '),
         widget.Clock(
                     format='%d/%m/%Y - %I:%M %p',
                     **base_color(fg='light')),
@@ -133,7 +133,7 @@ secondary_widgets=[
         widget.CurrentLayoutIcon(scale=0.55),
         widget.CurrentLayout(**base_color(fg='light'), padding=5),
         separator(),
-        nerd_icon(fg='color3',text=" ﬙ "),
+        nerd_icon(fg='color3',text=" 󰘚 "),
         widget.CPU(
                 format = "{load_percent}%",
                 **base_color(fg='light'),
@@ -166,7 +166,7 @@ secondary_widgets=[
         widget.Net(**base_color(fg='light'), interface='wlan0'),
         widget.Spacer(length=5),
         separator(),
-        nerd_icon(fg='color4',text='  '),
+        nerd_icon(fg='color4',text=' 󰃰 '),
         widget.Clock(
                     format='%d/%m/%Y - %I:%M %p',
                     **base_color(fg='light')),

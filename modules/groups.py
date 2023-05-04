@@ -16,7 +16,7 @@ from .keys import keys, mod
 # nf-fa-spotify
 
 groups = [Group(i) for i in [
-    "  ","  ","  ","  ","  ","  ","  ","  ","  ",
+    "  ","  ","  ","  ","  ","  ","  ","  "," 󱍢 "
 ]]
 
 for i ,group in enumerate(groups):
